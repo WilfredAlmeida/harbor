@@ -130,7 +130,7 @@
         "RENAME_SUCCESS": "Umbenennen erfolgreich!",
         "RENAME_CONFIRM_INFO": "Warnung, ändern des Namens auf admin@harbor.local, dies kann nicht rückgängig gemacht werden.",
         "CLI_PASSWORD": "CLI Secret",
-        "CLI_PASSWORD_TIP": "Das CLI Secret kann als Passwort mittels docker/helm cli verwendet werden, um auf Harbor zuzugreifen.",
+        "CLI_PASSWORD_TIP": "Das CLI-Secret kann als Passwort für den Docker- oder Helm-Client verwendet werden. Bei aktiviertem OIDC-Autorisierungsmodus empfehlen wir dringend die Verwendung von Robot-Zugängen, da CLI-Secrets von der Gültigkeit des ID-Tokens abhängen und regelmäßiges Anmelden über die Benutzeroberfläche erfordern.",
         "COPY_SUCCESS": "Kopieren erfolgreich",
         "COPY_ERROR": "Kopieren fehlgeschlagen",
         "ADMIN_CLI_SECRET_BUTTON": "ERZEUGE SECRET",
@@ -431,7 +431,8 @@
         "EVENT_TYPE_REQUIRED": "Mindestens ein Event Typ ist erforderlich",
         "PAYLOAD_FORMAT": "Payload Format",
         "CLOUD_EVENT": "CloudEvents",
-        "PAYLOAD_DATA": "Payload Data"
+        "PAYLOAD_DATA": "Payload Data",
+        "SLACK_RATE_LIMIT": "Please be aware of Slack Rate Limits"
     },
     "GROUP": {
         "GROUP": "Gruppe",
@@ -1034,6 +1035,7 @@
     "PUSH_IMAGE": {
         "TITLE": "Push Befehl",
         "DOCKER": "Docker",
+        "PODMAN": "Podman",
         "HELM": "Helm",
         "CNAB": "CNAB",
         "TAG_COMMAND_CHART": "Paketiere ein Chart für dieses Projekt:",
@@ -1228,7 +1230,12 @@
         "PARAMETERS": "Parameter",
         "DELETE_UNTAGGED": "Erlaube Speicherbereinigung auf Artefakte ohne Tag",
         "EXPLAIN": "Speicherbereinigung (Garbage Collection / GC) ist eine rechenintensive Operation, die die Registry-Leistung beeinflussen kann",
-        "DRY_RUN_SUCCESS": "Probelauf erfolgreich gestartet"
+        "EXPLAIN_TIME_WINDOW": "Artifacts uploaded in the past 2 hours(the default window) are excluded from garbage collection",
+        "DRY_RUN_SUCCESS": "Probelauf erfolgreich gestartet",
+        "DELETE_BLOB_AND_MANIFEST": "{{blob}} blob(s) and {{manifest}} manifest(s) deleted",
+        "DELETE_BLOB": "{{blob}} blob(s) deleted",
+        "DELETE_MANIFEST": "{{manifest}} manifest(s) deleted",
+        "FREE_UP_SIZE": "{{size}} space freed up"
     },
     "RETAG": {
         "MSG_SUCCESS": "Artefakt erfolgreich kopiert",
