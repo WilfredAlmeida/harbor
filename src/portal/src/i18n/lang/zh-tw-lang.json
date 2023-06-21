@@ -661,7 +661,8 @@
     "CRON_ERROR_TIP": "欄位為必填，「分鐘」欄位不允許使用「*」",
     "COPY_BY_CHUNK": "分段複製",
     "COPY_BY_CHUNK_TIP": "指定是否按分段複製 blob。分段傳輸可能會增加 API 請求的數量。",
-    "TRIGGER_STOP_SUCCESS": "成功觸發停止執行"
+    "TRIGGER_STOP_SUCCESS": "成功觸發停止執行",
+    "FILTER_TYPE":"過濾器類型"
   },
   "DESTINATION": {
     "NEW_ENDPOINT": "新增目標",
