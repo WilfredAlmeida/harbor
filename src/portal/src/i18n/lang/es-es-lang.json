@@ -132,7 +132,7 @@
         "RENAME_SUCCESS": "Rename success!",
         "RENAME_CONFIRM_INFO": "Warning, changing the name to admin@harbor.local can not be undone.",
         "CLI_PASSWORD": "CLI secreto",
-        "CLI_PASSWORD_TIP": "Puede utilizar este generador CLI secreto como utilizando Docker / Helm CLI para acceder a puerto.",
+        "CLI_PASSWORD_TIP": "El secreto CLI puede utilizarse como contraseña, para Docker o para el cliente Helm. Con el modo de autenticación de OIDC activado, recomendamos encarecidamente usar cuentas de robot, ya que los secretos de CLI dependen de la validez del token de ID y requieren que el usuario inicie sesión regularmente en la interfaz de usuario para actualizar el token.",
         "COPY_SUCCESS": "Copiar el éxito",
         "COPY_ERROR": "Copia no",
         "ADMIN_CLI_SECRET_BUTTON": "GENERATE SECRET",
@@ -1037,6 +1037,7 @@
     "PUSH_IMAGE": {
         "TITLE": "Push Command",
         "DOCKER": "Docker",
+        "PODMAN": "Podman",
         "HELM": "Helm",
         "CNAB": "CNAB",
         "TAG_COMMAND_CHART": "Package a chart for this project:",
@@ -1045,7 +1046,8 @@
         "TOOLTIP": "Command references for pushing an artifact to this project.",
         "TAG_COMMAND": "Tag an image for this project:",
         "PUSH_COMMAND": "Push an image to this project:",
-        "COPY_ERROR": "Copy failed, please try to manually copy the command references."
+        "COPY_ERROR": "Copy failed, please try to manually copy the command references.",
+        "COPY_PULL_COMMAND": "COPY PULL COMMAND"
     },
     "ARTIFACT": {
         "FILTER_FOR_ARTIFACTS": "Filter Artifacts",
@@ -1230,7 +1232,11 @@
         "DELETE_UNTAGGED": "Allow garbage collection on untagged artifacts",
         "EXPLAIN": "GC is a compute intensive operation that may impact registry performance",
         "EXPLAIN_TIME_WINDOW": "Artifacts uploaded in the past 2 hours(the default window) are excluded from garbage collection",
-        "DRY_RUN_SUCCESS": "Triggered dry run successfully"
+        "DRY_RUN_SUCCESS": "Triggered dry run successfully",
+        "DELETE_BLOB_AND_MANIFEST": "{{blob}} blob(s) and {{manifest}} manifest(s) deleted",
+        "DELETE_BLOB": "{{blob}} blob(s) deleted",
+        "DELETE_MANIFEST": "{{manifest}} manifest(s) deleted",
+        "FREE_UP_SIZE": "{{size}} space freed up"
     },
     "RETAG": {
         "MSG_SUCCESS": "Copy artifact successfully",
